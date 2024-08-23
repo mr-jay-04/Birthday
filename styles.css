@@ -17,9 +17,10 @@ body {
     text-align: center;
     position: relative;
     animation: fadeIn 1s ease-in-out;
+    box-shadow: 2px 5px 5px 5px rgba(255, 255, 255, 0.116);
 }
 
-/* Animation for card */
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -38,9 +39,20 @@ body {
     color: #eaeaea; 
     margin-bottom: 30px;
     line-height: 1.2;
+    animation: float 2s infinite ease-in-out;
 }
 
-
+@keyframes float {
+    0%{
+        transform: translateY(-15px)
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
 .button {
     font-family: 'Press Start 2P', cursive;
     font-size: 1.1em;
