@@ -1,0 +1,91 @@
+body {
+    font-family: 'Press Start 2P', cursive; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1e1e1e;
+}
+
+.card {
+    background: #2d2d2d; 
+    border: 2px solid #ff007f; 
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation for card */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.greeting {
+    font-size: 2.2em;
+    color: #00eaff; 
+    margin-bottom: 10px;
+
+}
+
+.message {
+    font-size: 1.2em;
+    color: #eaeaea; 
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+
+.button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.1em;
+    color: #1e1e1e;
+    background-color: #e7e7e7; 
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: pulse 1.5s infinite;
+}
+
+.button:hover {
+    background-color: #e70b84;
+    color: #f8f8f8;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.04);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.hidden-message {
+    display: none;
+    font-size: 1.2em;
+    color: #ff007f; 
+    margin-top: 20px;
+    line-height: 1.2;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.hidden-message a {
+    color: #f8f8f8; 
+    text-decoration: none;
+}
+
+.hidden-message a:hover {
+    color: #00eaff;
+}
